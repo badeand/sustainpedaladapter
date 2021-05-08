@@ -1,7 +1,7 @@
 #include "MIDIUSB.h"
 #include <EEPROM.h>
 
-int pedalPin = 10;
+int pedalPin = 15;
 
 int RXLED = 17;  // The RX LED has a defined Arduino pin
 
