@@ -20,7 +20,7 @@ This box provides a dedicated MIDI device for a sustain pedal.
 | Basic Channel | 1- 16 | x | Configurable. Send CC 01 to set channel. Eg. CC 01, value 3 sets MIDI channel 3
 | Note number | x | x |
 | Control Change | x  | 1 | Sets MIDI Output channel. Use 1 for MPE.
-| Control Change | 64  | 0 / 100 | Sustain pedal. 0 = off, 100 = on
+| Control Change | 64  | x | Sustain pedal. 0 = off, 100 = on
 
 ## GUI/ Test application
 
