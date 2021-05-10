@@ -1,10 +1,11 @@
 # Sustain pedal adapter
 Simple adapter from sustain pedal to sustain MIDI signal.
 
-This repositor contains:
+This repository contains:
  - 3D models of case
  - Schematics
- - Firmware
+ - Firmware (Arduino)
+ - Small applicaton (Max patch) to configure and test adapter
 
 I bought new fancy and small MIDI controllers lacking sustain pedal jack input and really missed this feature.
 
@@ -31,6 +32,8 @@ Firmware has been developed for platform.io, but should work perfectly on Arduin
 | Note number | x | x |
 | Control Change | x  | 1 | Sets MIDI Output channel. Use 1 for MPE.
 | Control Change | 64  | 0 / 100 | Sustain pedal. 0 = off, 100 = on
+
+## GUI/ Test application 
 
 A simple Max Patch (see GUI directory) may be used to configure and test the pedal
 
