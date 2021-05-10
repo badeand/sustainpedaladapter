@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1476.0, 2008.0 ],
+		"rect" : [ 975.0, 601.0, 1094.0, 1189.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -62,11 +62,11 @@
 					"patching_rect" : [ 203.499999344348907, 130.333322584629059, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -145,12 +145,12 @@
 					"patching_rect" : [ 198.666668593883514, 431.000003039836884, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.numbox[3]",
 							"parameter_type" : 1,
 							"parameter_unitstyle" : 0,
 							"parameter_mmin" : 1.0,
 							"parameter_longname" : "live.numbox[3]",
-							"parameter_mmax" : 16.0
+							"parameter_mmax" : 16.0,
+							"parameter_shortname" : "live.numbox[3]"
 						}
 
 					}
@@ -171,11 +171,11 @@
 					"patching_rect" : [ 603.000009298324585, 706.000003099441528, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.button",
-							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.button",
-							"parameter_mmax" : 1
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.button",
+							"parameter_enum" : [ "off", "on" ]
 						}
 
 					}
@@ -196,10 +196,10 @@
 					"patching_rect" : [ 555.666667461395264, 804.000006258487701, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.numbox[2]"
+							"parameter_longname" : "live.numbox[2]",
+							"parameter_shortname" : "live.numbox"
 						}
 
 					}
@@ -217,7 +217,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.666674911975861, 751.166670978069305, 113.0, 21.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Controller number",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
@@ -232,7 +231,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.666674911975861, 801.000006258487701, 100.0, 21.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Controller value",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
@@ -250,10 +248,10 @@
 					"patching_rect" : [ 555.666667461395264, 754.166670978069305, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.numbox[1]"
+							"parameter_longname" : "live.numbox[1]",
+							"parameter_shortname" : "live.numbox"
 						}
 
 					}
@@ -274,10 +272,10 @@
 					"patching_rect" : [ 550.999992430210114, 706.000003099441528, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.numbox"
+							"parameter_longname" : "live.numbox",
+							"parameter_shortname" : "live.numbox"
 						}
 
 					}
@@ -295,7 +293,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.666674911975861, 703.000003099441528, 88.0, 21.0 ],
-					"presentation_linecount" : 2,
 					"text" : "MIDI Channel",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
@@ -473,10 +470,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-59" : [ "live.numbox[3]", "live.numbox[3]", 0 ],
-			"obj-55" : [ "live.numbox[2]", "live.numbox", 0 ],
 			"obj-52" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-55" : [ "live.numbox[2]", "live.numbox", 0 ],
 			"obj-51" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-59" : [ "live.numbox[3]", "live.numbox[3]", 0 ],
 			"obj-58" : [ "live.button", "live.button", 0 ],
 			"obj-63" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
