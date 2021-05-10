@@ -11,6 +11,27 @@ I bought new fancy and small MIDI controllers lacking sustain pedal jack input a
 
 ![](pics/1.JPG)
 
+## MIDI Implementation chart
+
+| Function | Transmitted| Recognized | Remarks | 
+|---|---|---|---|
+| Basic Channel | 1- 16 | x | Configurable. Send CC 01 to set channel. Eg. CC 01, value 3 sets MIDI channel 3
+| Note number | x | x |
+| Control Change | x  | 1 | Sets MIDI Output channel. Use 1 for MPE.
+| Control Change | 64  | 0 / 100 | Sustain pedal. 0 = off, 100 = on
+
+## GUI/ Test application
+
+A simple Max Patch (see GUI directory) may be used to configure and test the pedal
+
+![](screenshots/sc_GUI.png)
+
+## Configuration for Live
+
+Configure MIDI device "SparkFun Pro Micro" as MIDI track input:
+
+![](screenshots/live_midi_config.png)
+
 ## How to make it
 
 An Arduino Pro Micro is the heart of the unit.
@@ -24,22 +45,8 @@ Firmware has been developed for platform.io, but should work perfectly on Arduin
 ![](pics/2.JPG)
 ![](pics/3.JPG)
 
-## MIDI Implementation chart
 
-| Function | Transmitted| Recognized | Remarks | 
-|---|---|---|---|
-| Basic Channel | 1- 16 | x | Configurable. Send CC 01 to set channel. Eg. CC 01, value 3 sets MIDI channel 3
-| Note number | x | x |
-| Control Change | x  | 1 | Sets MIDI Output channel. Use 1 for MPE.
-| Control Change | 64  | 0 / 100 | Sustain pedal. 0 = off, 100 = on
-
-## GUI/ Test application 
-
-A simple Max Patch (see GUI directory) may be used to configure and test the pedal
-
-![](screenshots/sc_GUI.png)
-
-## Bill of Materials
+### Bill of Materials
  - 10k resistor (or similar)
  - Arduino Pro Micro
  - Jack
