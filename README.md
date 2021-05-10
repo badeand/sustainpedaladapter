@@ -1,5 +1,5 @@
 # Sustain pedal adapter
-Simple adapter from sustain pedal to sustain MIDI signal.
+Simple, quick and dirty adapter from sustain pedal to sustain MIDI signal.
 
 This repository contains:
  - 3D models of case
