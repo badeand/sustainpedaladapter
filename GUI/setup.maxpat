@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 975.0, 601.0, 1094.0, 1189.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -37,7 +37,74 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.873265385627747, 0.873239278793335, 0.873254060745239, 1.0 ],
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 197.499999165534973, 304.000009059906006, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 76.833328902721405, 166.666654348373413, 150.0, 20.0 ],
+					"text" : "Test"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.873265385627747, 0.873239278793335, 0.873254060745239, 1.0 ],
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 272.000008106231689, 122.000003635883331, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 82.833329081535339, 58.000001728534698, 150.0, 20.0 ],
+					"text" : "Configure"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 1,
+					"bordercolor" : [ 0.36078431372549, 0.32156862745098, 0.325490196078431, 1.0 ],
+					"grad1" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
+					"grad2" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"id" : "obj-4",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 551.0000159740448, 371.00001060962677, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 68.833329081535339, 173.99999076128006, 268.666670858860016, 115.33333295583725 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"border" : 1,
+					"bordercolor" : [ 0.36078431372549, 0.32156862745098, 0.325490196078431, 1.0 ],
+					"grad1" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
+					"grad2" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"id" : "obj-1",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 536.0000159740448, 356.00001060962677, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 68.833329081535339, 68.000002026557922, 268.666670858860016, 89.999998867511749 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.827450980392157, 0.392156862745098, 0.392156862745098, 0.0 ],
 					"id" : "obj-82",
@@ -46,7 +113,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 603.000009298324585, 804.000006258487701, 18.0, 18.0 ]
+					"patching_rect" : [ 603.000009298324585, 804.000006258487701, 18.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 284.833347260951996, 262.666656792163849, 18.0, 18.0 ]
 				}
 
 			}
@@ -60,13 +129,15 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 203.499999344348907, 130.333322584629059, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 280.833334982395172, 94.333326280117035, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 2,
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_longname" : "live.text",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
-							"parameter_enum" : [ "val1", "val2" ]
+							"parameter_type" : 2
 						}
 
 					}
@@ -96,13 +167,15 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-61",
-					"items" : [ "AU DLS Synth 1", ",", "iConnectAUDIO4+ DIN", ",", "iConnectAUDIO4+ USB2", ",", "iConnectAUDIO4+ HST1", ",", "iConnectAUDIO4+ HST2", ",", "iConnectAUDIO4+ HST3", ",", "iConnectAUDIO4+ HST4", ",", "iConnectAUDIO4+ HST5", ",", "iConnectAUDIO4+ HST6", ",", "iConnectAUDIO4+ HST7", ",", "iConnectAUDIO4+ HST8", ",", "from Max 1", ",", "from Max 2", ",", "SparkFun Pro Micro" ],
+					"items" : [ "AU DLS Synth 1", ",", "Fireface UFX Port 1", ",", "Fireface UFX Port 2", ",", "Akai APC40", ",", "FaderPort", ",", "Joue Play", ",", "Joue Edit", ",", "SparkFun Pro Micro", ",", "Fireface 800 (200) Port 1", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 203.499999344348907, 232.333330512046814, 194.000001311302185, 23.0 ]
+					"patching_rect" : [ 203.499999344348907, 232.333330512046814, 194.000001311302185, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 82.833329081535339, 90.333326280117035, 194.000001311302185, 23.0 ]
 				}
 
 			}
@@ -125,11 +198,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-60",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 102.666667342185974, 428.000003039836884, 88.0, 21.0 ],
-					"text" : "MIDI Channel",
+					"patching_rect" : [ 102.666667342185974, 428.000003039836884, 88.0, 36.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 82.833329081535339, 121.999993920326233, 115.0, 21.0 ],
+					"text" : "Set MIDI Channel:",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 
@@ -143,14 +219,16 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 198.666668593883514, 431.000003039836884, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 232.833330392837524, 124.999993920326233, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 1,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : 1.0,
 							"parameter_longname" : "live.numbox[3]",
 							"parameter_mmax" : 16.0,
-							"parameter_shortname" : "live.numbox[3]"
+							"parameter_mmin" : 1.0,
+							"parameter_shortname" : "live.numbox[3]",
+							"parameter_type" : 1,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -169,13 +247,15 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 603.000009298324585, 706.000003099441528, 15.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 284.833347260951996, 203.333321452140808, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 2,
+							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "live.button",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.button",
-							"parameter_enum" : [ "off", "on" ]
+							"parameter_type" : 2
 						}
 
 					}
@@ -194,12 +274,14 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 555.666667461395264, 804.000006258487701, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 232.833330392837524, 262.666656792163849, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.numbox[2]",
-							"parameter_shortname" : "live.numbox"
+							"parameter_shortname" : "live.numbox",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -217,6 +299,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.666674911975861, 751.166670978069305, 113.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 82.833329081535339, 230.499988794326782, 113.0, 21.0 ],
 					"text" : "Controller number",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
@@ -231,6 +315,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.666674911975861, 801.000006258487701, 100.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 82.833329081535339, 259.666656792163849, 100.0, 21.0 ],
 					"text" : "Controller value",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
@@ -246,12 +332,14 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 555.666667461395264, 754.166670978069305, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 232.833330392837524, 233.499988794326782, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.numbox[1]",
-							"parameter_shortname" : "live.numbox"
+							"parameter_shortname" : "live.numbox",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -270,12 +358,14 @@
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 550.999992430210114, 706.000003099441528, 44.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 232.833330392837524, 203.333321452140808, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.numbox",
-							"parameter_shortname" : "live.numbox"
+							"parameter_shortname" : "live.numbox",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -293,6 +383,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 432.666674911975861, 703.000003099441528, 88.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 82.833329081535339, 200.333321452140808, 88.0, 21.0 ],
 					"text" : "MIDI Channel",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
@@ -470,16 +562,17 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-51" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-52" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-55" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-51" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-59" : [ "live.numbox[3]", "live.numbox[3]", 0 ],
 			"obj-58" : [ "live.button", "live.button", 0 ],
+			"obj-59" : [ "live.numbox[3]", "live.numbox[3]", 0 ],
 			"obj-63" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [  ],
