@@ -11,7 +11,7 @@ I bought new fancy and small MIDI controllers lacking sustain pedal jack input a
 
 This box provides a dedicated MIDI device for a sustain pedal.
 
-![](pics/3.JPG)
+![](pics/4.JPG)
 
 ## MIDI Implementation chart
 
@@ -43,6 +43,8 @@ The arduino detect switch signals (closed circuit) and sends an according MIDI C
 ![](schematics/sustainpedaladapter_bb.png)
 
 Firmware has been developed for platform.io, but should work perfectly on Arduino IDE.
+
+![](pics/3.JPG)
 
 ![](pics/2.JPG)
 
